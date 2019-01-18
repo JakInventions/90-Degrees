@@ -1,0 +1,96 @@
+﻿
+/* Font Imports */
+
+@font-face{
+	
+	src: url("fonts/Roboto-Light.ttf");
+	
+	font-family: roboto;
+	
+}
+
+/* Id's */
+
+#splashScreenLogo{
+		
+	width: 480px;
+		
+	height: 400px;
+	
+	display: block;
+	
+	margin: auto;
+	
+	margin-top: 20vh;
+	
+}
+
+#splashScreen2{
+	
+	text-align: center;
+	
+	line-height: 80vh;
+	
+	font-size: 25px;
+	
+	display: none;
+	
+}
+
+/* Classes */
+
+/* Tags */
+
+body{
+	
+	background: #282828;
+	
+	overflow-y: none;
+	
+}
+
+h1{
+	
+	color: white;
+	
+}
+
+/* Other */
+
+*{
+	
+	font-family: roboto;
+	
+	-webkit-user-select: none;
+	
+	-moz-user-select: none;
+	
+	-ms-user-select: none;
+	
+	user-select: none;
+	
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+	
+	/* Id's */
+	
+	#splashScreenLogo{
+		
+		margin-top: 20vh;
+		
+		width: 240px;
+		
+		height: 200px;
+		
+	}
+
+	/* Classes */
+
+	/* Tags */
+
+	/* Other */
+	
+}
