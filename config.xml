@@ -24,4 +24,6 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="windows" spec="~6.0.1" />
+	<preference name="phonegap-version" value="cli-6.1.0" />
+	<preference name="windows-appx-target" value="uap" />
 </widget>
