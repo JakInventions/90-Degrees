@@ -1,0 +1,7 @@
+
+var gameStarted = false;
+
+
+
+
+
