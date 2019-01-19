@@ -33,30 +33,6 @@ async function startIntroAnimation(){
 		
 		await sleep(1500);
 		
-		/*document.getElementById("player").className = "rotated90";
-		
-		document.getElementById("player").style.background = "orange";
-		
-		await sleep(1000);
-		
-		document.getElementById("player").className = "rotated180";
-		
-		document.getElementById("player").style.background = "purple";
-		
-		await sleep(1000);
-		
-		document.getElementById("player").className = "rotated270";
-		
-		document.getElementById("player").style.background = "cyan";
-		
-		await sleep(1000);
-		
-		document.getElementById("player").className = "rotated360";
-		
-		document.getElementById("player").style.background = "yellow";
-		
-		document.getElementById("player").className = "rotated0";*/
-		
 	}
 	
 }
