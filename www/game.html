@@ -43,7 +43,7 @@
 
 <!-- Body-->
 
-<html onclick="checkGameStart();" onkeydown="checkGameStart(); checkPlayerMovement(event);" onmousedown="swipeStart(event);" onmouseup="swipeFinsish(event);">
+<html onclick="checkGameStart();" onkeydown="checkGameStart(); checkPlayerMovement(event);" onmousedown="swipeStart(event);" onmouseup="swipeFinsish(event);" ontouchstart="touchSwipeStart(event);" ontouchend="touchSwipeEnd(event);">
 	
 	<body onload="transitionIn('gameCanvas');">
 		

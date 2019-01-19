@@ -7,8 +7,6 @@ var verticalSwipeLenth = window.innerHeight / 5;
 
 var horizontalSwipeLenth = window.innerWidth / 5;
 
-console.log(horizontalSwipeLenth + " * " + verticalSwipeLenth);
-
 function checkPlayerMovement(event){
 	
 	/*
@@ -130,6 +128,44 @@ function swipeFinsish(event){
 	}
 	
 	else if(tapStartY - event.pageY >= verticalSwipeLenth){
+		
+		turnUp();
+		
+	}
+	
+}
+
+function touchSwipeStart(event){
+	
+	tapStartX = event.touches[0].clientX;
+	
+	tapStartY = event.touches[0].clientY;
+	
+	console.log(tapStartX + ", " + tapStartY)
+	
+}
+
+function touchSwipeEnd(event){
+	
+	if(event.changedTouches[0].clientX - tapStartX >= horizontalSwipeLenth){
+		
+		turnRight();
+		
+	}
+	
+	else if(tapStartX - event.changedTouches[0].clientX >= horizontalSwipeLenth){
+		
+		turnLeft();
+		
+	}
+	
+	else if(event.changedTouches[0].clientY - tapStartY >= verticalSwipeLenth){
+		
+		turnDown();
+		
+	}
+	
+	else if(tapStartY - event.changedTouches[0].clientY >= verticalSwipeLenth){
 		
 		turnUp();
 		
