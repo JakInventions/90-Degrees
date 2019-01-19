@@ -42,24 +42,19 @@
 
 <!-- Body-->
 
-<body onload="showSplashScreens();">
-
-	<section id="splashScreen">
-
-		<img id="splashScreenLogo" src="assets/img/jakLogo.png"></img>
-
-	</section>
+<html onclick="checkGameStart();" onkeydown="checkGameStart(); checkPlayerMovement(event);">
 	
-	<section id="previewCanvas">
-	
-		<h1 id="gameTitle">90 Degrees</h1>
+	<body onload="transitionIn('gameCanvas')">
 		
-		<div id="playerPreview"></div>
+		<section id="gameCanvas">
+			
+			<div id="player"></div>
+			
+			<h1 id="scoreCount">Tap to Start</h1>
+			
+		</section>
 		
-		<button id="startButton" onclick="launchGame();">Start</button>
+	</body>
 	
-	</section>
-	
-</body>
-
+</html>
 

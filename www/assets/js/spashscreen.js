@@ -11,9 +11,9 @@ function showSplashScreens(){
 			
 			$("#splashScreen").fadeOut(fadeSpeed, function(){
 				
-				$("#gameCanvas").fadeOut(0);
+				$("#previewCanvas").fadeOut(0);
 		
-				$("#gameCanvas").fadeIn(fadeSpeed, function(){
+				$("#previewCanvas").fadeIn(fadeSpeed, function(){
 					
 					startIntroAnimation();
 					
