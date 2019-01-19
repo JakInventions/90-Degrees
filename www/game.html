@@ -28,6 +28,7 @@
 <script src="assets/js/menu.js"></script>
 <script src="assets/js/game.js"></script>
 <script src="assets/js/transitions.js"></script>
+<script src="assets/js/controls.js"></script>
 
 <!-- jQuery -->
 
@@ -42,11 +43,19 @@
 
 <!-- Body-->
 
-<html onclick="checkGameStart();" onkeydown="checkGameStart(); checkPlayerMovement(event);">
+<html onclick="checkGameStart();" onkeydown="checkGameStart(); checkPlayerMovement(event);" onmousedown="swipeStart(event);" onmouseup="swipeFinsish(event);">
 	
-	<body onload="transitionIn('gameCanvas')">
+	<body onload="transitionIn('gameCanvas');">
 		
 		<section id="gameCanvas">
+			
+			<!--<div id="yellowProjectile" class="vertical projectile"></div>
+			
+			<div id="purpleProjectile" class="vertical projectile"></div>
+			
+			<div id="orangeProjectile" class="horizontal projectile"></div>
+			
+			<div id="cyanProjectile" class="horizontal projectile"></div>-->
 			
 			<div id="player"></div>
 			
