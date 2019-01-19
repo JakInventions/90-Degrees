@@ -13,7 +13,11 @@ function showSplashScreens(){
 				
 				$("#gameCanvas").fadeOut(0);
 		
-				$("#gameCanvas").fadeIn(fadeSpeed);
+				$("#gameCanvas").fadeIn(fadeSpeed, function(){
+					
+					startIntroAnimation();
+					
+				});
 				
 				
 			});
