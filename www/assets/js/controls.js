@@ -101,6 +101,10 @@ function turnRight(){
 
 function swipeStart(event){
 	
+	verticalSwipeLenth = window.innerHeight / 5;
+
+	horizontalSwipeLenth = window.innerWidth / 5;
+	
 	tapStartX = event.pageX;
 	
 	tapStartY = event.pageY;
@@ -136,6 +140,10 @@ function swipeFinsish(event){
 }
 
 function touchSwipeStart(event){
+	
+	verticalSwipeLenth = window.innerHeight / 5;
+
+	horizontalSwipeLenth = window.innerWidth / 5;
 	
 	tapStartX = event.touches[0].clientX;
 	
