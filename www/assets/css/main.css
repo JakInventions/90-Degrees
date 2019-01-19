@@ -123,6 +123,8 @@ button{
 	
 	font-family: roboto;
 	
+	outline: none;
+	
 	-webkit-user-select: none;
 	
 	-moz-user-select: none;
