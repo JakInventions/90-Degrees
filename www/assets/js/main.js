@@ -1,7 +1,7 @@
 
 function initiateStuff(){
 	
-	transitionIn('gameCanvas');
+	
 	
 	if(!!window.cordova){
 		
