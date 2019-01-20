@@ -26,4 +26,5 @@
     </platform>
     <engine name="windows" spec="~6.0.1" />
     <plugin name="cordova-plugin-fullscreen" spec="^1.2.0" />
+    <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
 </widget>
