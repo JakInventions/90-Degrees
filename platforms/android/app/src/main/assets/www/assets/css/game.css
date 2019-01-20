@@ -1,0 +1,87 @@
+
+/* Font Imports */
+
+/* Id's */
+
+#player{
+	
+	background: white;
+	
+	width: 50px;
+	
+	height: 50px;
+	
+	margin: auto;
+	
+	margin-top: 45vh;
+	
+	transition: 0.5s;
+	
+}
+
+#gameCanvas{
+	
+	position: relative;
+	
+}
+
+#scoreCount{
+	
+	text-align: center;
+	
+	font-size: 50px;
+	
+	opacity: 0.5;
+	
+	margin-top: -150px;
+	
+	transition: 0.5s;
+	
+}
+
+#yellowProjectile{ background: #edfd5f; }
+#purpleProjectile{ background: #8A2BE2; }
+#orangeProjectile{ background: #f28500; }
+#cyanProjectile{ background: #1cbfd0; }
+
+/* Classes */
+
+.vertical{
+	
+	width: 50px;
+	
+	height: 25px;
+	
+}
+
+.horizontal{
+	
+	width: 25px;
+	
+	height: 50px;
+	
+}
+
+.projectile{
+	
+	position: absolute;
+	
+}
+
+/* Tags */
+
+/* Other */
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+	
+	/* Id's */
+
+	/* Classes */
+
+	/* Tags */
+
+	/* Other */
+	
+}

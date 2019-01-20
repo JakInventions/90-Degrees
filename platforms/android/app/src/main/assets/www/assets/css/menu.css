@@ -1,0 +1,112 @@
+
+/* Font Imports */
+
+@font-face{
+	
+	src: url("fonts/Roboto-Light.ttf");
+	
+	font-family: roboto;
+	
+}
+
+/* Id's */
+
+#playerPreview{
+	
+	background: white;
+	
+	width: 50px;
+	
+	height: 50px;
+	
+	margin: auto;
+	
+	margin-top: 10vh;
+	
+	transition: 1s;
+	
+}
+
+#splashScreenLogo{
+	
+	width: 480px;
+	
+	height: 400px;
+	
+	display: block;
+	
+	margin: auto;
+	
+	margin-top: 20vh;
+	
+}
+
+#previewCanvas{
+	
+	text-align: center;
+	
+	font-size: 25px;
+	
+	display: none;
+	
+	position: relative;
+	
+}
+
+#gameTitle{
+	
+	margin-top: 25vh;
+	
+}
+
+#startButton{
+	
+	margin-top: 10vh;
+	
+	font-size: 40px;
+	
+	transition: 0.5s;
+	
+}
+
+#startButton:active{
+	
+	opacity: 0.25;
+	
+}
+
+/* Classes */
+
+/* Tags */
+
+h1{
+	
+	color: white;
+	
+}
+
+/* Other */
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+	
+	/* Id's */
+	
+	#splashScreenLogo{
+		
+		margin-top: 20vh;
+		
+		width: 240px;
+		
+		height: 200px;
+		
+	}
+
+	/* Classes */
+
+	/* Tags */
+
+	/* Other */
+	
+}
