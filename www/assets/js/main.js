@@ -43,9 +43,9 @@ function initiateStuff(){
 		
 		AndroidFullScreen.leanMode(successFunction, errorFunction);
 		
-		document.getElementById("gameTitle").innerHTML += " In cordova : " + inCordova;
-		
 	}
+	
+	document.getElementById("gameTitle").innerHTML += " In cordova : " + inCordova;
 	
 }
 
