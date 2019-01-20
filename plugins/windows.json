@@ -7,9 +7,19 @@
     "files": {}
   },
   "installed_plugins": {
+    "cordova-plugin-fullscreen": {
+      "PACKAGE_NAME": "90 Degrees"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "90 Degrees"
+    },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "90 Degrees"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "90 Degrees"
+    }
+  }
 }

@@ -10,7 +10,7 @@
   "cordova-plugin-fullscreen": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-fullscreen"
+      "id": "cordova-plugin-fullscreen@^1.2.0"
     },
     "is_top_level": true,
     "variables": {}
@@ -18,7 +18,7 @@
   "cordova-plugin-screen-orientation": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-screen-orientation"
+      "id": "cordova-plugin-screen-orientation@^3.0.1"
     },
     "is_top_level": true,
     "variables": {}

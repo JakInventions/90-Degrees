@@ -1,0 +1,67 @@
+﻿
+<title>90 Degrees</title>
+
+<!-- Meta data tags  -->
+
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+<link rel="apple-touch-icon" href="assets/img/icon.png"/>
+
+<meta name="apple-mobile-web-app-title" content="FreeXT"/>
+
+<meta name="author" content="Jak"/>
+
+<meta charset="utf-8"/>
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<!-- Imports -->
+
+<link rel="shortcut icon" href="assets/img/icon.png"/>
+
+<!-- Javascript -->
+
+<script type="text/javascript" src="cordova.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/spashscreen.js"></script>
+<script src="assets/js/menu.js"></script>
+<script src="assets/js/game.js"></script>
+<script src="assets/js/transitions.js"></script>
+<script src="assets/js/controls.js"></script>
+
+<!-- jQuery -->
+
+<script src="assets/js/jQuery/jquery-3.3.1.min.js"></script>
+
+<!-- Css -->
+
+<link rel="stylesheet" href="assets/css/main.css"/>
+<link rel="stylesheet" href="assets/css/menu.css"/>
+<link rel="stylesheet" href="assets/css/game.css"/>
+<link rel="stylesheet" href="assets/css/fontawesome-free-5.6.3-web/css/all.css"/>
+
+<!-- Body-->
+
+<body onload="showSplashScreens();">
+
+	<section id="splashScreen">
+
+		<img id="splashScreenLogo" src="assets/img/jakLogo.png"></img>
+
+	</section>
+	
+	<section id="previewCanvas">
+	
+		<h1 id="gameTitle">90 Degrees</h1>
+		
+		<div id="playerPreview"></div>
+		
+		<button id="startButton" onclick="launchGame();">Start</button>
+	
+	</section>
+	
+</body>
+
+

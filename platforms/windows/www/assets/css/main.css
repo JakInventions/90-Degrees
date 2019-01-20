@@ -1,0 +1,74 @@
+﻿
+/* Font Imports */
+
+/* Id's */
+
+/* Classes */
+
+/* Tags */
+
+body{
+	
+	background: #282828;
+	
+	margin: 0px;
+	
+	padding: 0px;
+	
+}
+
+html{
+	
+	height: 100%;
+	
+}
+
+button{
+	
+	background: white;
+	
+	color: #282828;
+	
+	border: 1px solid black;
+	
+	padding: 5px;
+	
+}
+
+button::-moz-focus-inner {
+  
+	border: 0;
+  
+}
+
+/* Other */
+
+*{
+	
+	font-family: roboto;
+	
+	outline: none;
+	
+	-webkit-user-select: none;
+	
+	-moz-user-select: none;
+	
+	-ms-user-select: none;
+	
+	user-select: none;
+	
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 600px){
+	
+	/* Id's */
+
+	/* Classes */
+
+	/* Tags */
+
+	/* Other */
+	
+}
