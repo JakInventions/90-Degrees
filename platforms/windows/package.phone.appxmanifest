@@ -3,7 +3,7 @@
     <Identity Name="com.jakinventions.NinetyDegrees" Publisher="CN=$username$" Version="1.0.0.0" />
     <mp:PhoneIdentity PhoneProductId="fa6c7290-1ccf-11e9-8300-5f6f1576007d" PhonePublisherId="db093ed5-53b1-45f7-af72-751e8f36ab80" />
     <Properties>
-        <DisplayName>90 Degrees</DisplayName>
+        <DisplayName>Ninety Degrees</DisplayName>
         <PublisherDisplayName>Jak Inventions</PublisherDisplayName>
         <Logo>images\StoreLogo.png</Logo>
         <Description>A sample Apache Cordova application that responds to the deviceready event.</Description>
@@ -17,7 +17,7 @@
     </Resources>
     <Applications>
         <Application Id="com.jakinventions.NinetyDegrees" StartPage="www/index.html">
-            <m3:VisualElements BackgroundColor="transparent" Description="A sample Apache Cordova application that responds to the deviceready event." DisplayName="90 Degrees" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
+            <m3:VisualElements BackgroundColor="transparent" Description="A sample Apache Cordova application that responds to the deviceready event." DisplayName="Ninety Degrees" ForegroundText="light" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
                 <m3:DefaultTile Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png">
                     <m3:ShowNameOnTiles>
                         <m3:ShowOn Tile="square150x150Logo" />

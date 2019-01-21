@@ -23,7 +23,6 @@
 
 <!-- Javascript -->
 
-<script type="text/javascript" src="cordova.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/spashscreen.js"></script>
 <script src="assets/js/menu.js"></script>
@@ -44,7 +43,7 @@
 
 <!-- Body-->
 
-<body onload="showSplashScreens();">
+<body onload="showSplashScreens(); initiateStuff();">
 
 	<section id="splashScreen">
 
@@ -63,5 +62,8 @@
 	</section>
 	
 </body>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
 
 

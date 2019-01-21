@@ -1,49 +1,43 @@
 
+window.addEventListener("orientationchange", function(){
+	
+	screen.orientation.lock('portrait');
+	
+});
+
+window.addEventListener("load", function(){
+	
+	if (AndroidFullScreen) {
+		
+		AndroidFullScreen.immersiveMode();
+		
+	}
+	
+});
+
 function initiateStuff(){
 	
-	transitionIn('gameCanvas');
+	screen.orientation.lock('portrait');
 	
-	if(!!window.cordova){
+	function successFunction(){
 		
-        console.log("In cordova");
-		
-		inCordova = true;
-		
-    }
-	
-   else{
-		
-		console.log("Not in cordova");
-		
-		inCordova = false;
+		console.info("It worked!");
 		
 	}
 	
-	if(inCordova){
+	function errorFunction(error){
 		
-		screen.orientation.lock('portrait');
-		
-		function successFunction(){
-			
-			console.info("It worked!");
-			
-		}
-		
-		function errorFunction(error){
-			
-			console.error(error);
-			
-		}
-		
-		function trace(value){
-			
-			console.log(value);
-			
-		}
-		
-		AndroidFullScreen.leanMode(successFunction, errorFunction);
+		console.error(error);
 		
 	}
+	
+	function trace(value){
+		
+		console.log(value);
+		
+	}
+	
+	AndroidFullScreen.leanMode(successFunction, errorFunction);
 	
 }
 

@@ -23,7 +23,6 @@
 
 <!-- Javascript -->
 
-<script type="text/javascript" src="cordova.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/spashscreen.js"></script>
 <script src="assets/js/menu.js"></script>
@@ -46,7 +45,7 @@
 
 <html onkeydown="checkGameStart(); checkPlayerMovement(event);" onmousedown="checkGameStart(); swipeStart(event);" onmouseup="swipeFinsish(event);" ontouchstart="checkGameStart(); touchSwipeStart(event);" ontouchend="touchSwipeEnd(event);">
 	
-	<body onload="initiateStuff();">
+	<body onload="transitionIn('gameCanvas');">
 		
 		<section id="gameCanvas">
 			
@@ -67,4 +66,7 @@
 	</body>
 	
 </html>
+
+<script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="assets/js/index.js"></script>
 
