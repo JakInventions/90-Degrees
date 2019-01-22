@@ -3,6 +3,12 @@
 
 /* Id's */
 
+#splashScreen{
+	
+	display: none;
+	
+}
+
 #playerPreview{
 	
 	background: white;
