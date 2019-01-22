@@ -117,7 +117,7 @@ function swipeFinsish(event){
 	
 	deltaY = event.pageY - tapStartY;
 	
-	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && deltaX >= Math.abs(deltaY)){
+	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && Math.abs(deltaX) >= Math.abs(deltaY)){
 		
 		turnRight();
 		

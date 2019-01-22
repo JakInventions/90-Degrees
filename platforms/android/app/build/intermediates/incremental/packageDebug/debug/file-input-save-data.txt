@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Jan 22 16:04:37 EST 2019
+#Tue Jan 22 16:06:37 EST 2019
 1511.path=www/assets/css/fontawesome-free-5.6.3-web/svgs/regular/sticky-note.svg
 1391.set=ASSET
 1034.base=C\:\\Users\\Jak\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\build\\intermediates\\assets\\debug
