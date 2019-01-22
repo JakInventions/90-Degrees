@@ -117,25 +117,27 @@ function swipeFinsish(event){
 	
 	deltaY = event.pageY - tapStartY;
 	
-	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && deltaX >= deltaY * 2){
+	console.log(deltaX + ", " + deltaY);
+	
+	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && deltaX >= Math.abs(deltaY)){
 		
 		turnRight();
 		
 	}
 	
-	else if(deltaX < 0 && Math.abs(deltaX) >= horizontalSwipeLenth){
+	else if(deltaX < 0 && Math.abs(deltaX) >= horizontalSwipeLenth && Math.abs(deltaX) >= Math.abs(deltaY)){
 		
 		turnLeft();
 		
 	}
 	
-	else if(deltaY > 0 && deltaY >= verticalSwipeLenth){
+	else if(deltaY > 0 && deltaY >= verticalSwipeLenth && Math.abs(deltaY) >= Math.abs(deltaX)){
 		
 		turnDown();
 		
 	}
 	
-	else if(deltaY < 0 && Math.abs(deltaY) >= verticalSwipeLenth){
+	else if(deltaY < 0 && Math.abs(deltaY) >= verticalSwipeLenth && Math.abs(deltaY) >= Math.abs(deltaX)){
 		
 		turnUp();
 		
