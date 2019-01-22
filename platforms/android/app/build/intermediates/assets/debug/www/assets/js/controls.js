@@ -5,7 +5,7 @@ var tapStartY = 0;
 
 var verticalSwipeLenth = window.innerHeight / 10;
 
-var horizontalSwipeLenth = window.innerWidth / 5;
+var horizontalSwipeLenth = window.innerWidth / 10;
 
 function checkPlayerMovement(event){
 	
@@ -103,7 +103,7 @@ function swipeStart(event){
 	
 	verticalSwipeLenth = window.innerHeight / 10;
 
-	horizontalSwipeLenth = window.innerWidth / 5;
+	horizontalSwipeLenth = window.innerWidth / 10;
 	
 	tapStartX = event.pageX;
 	
@@ -147,7 +147,7 @@ function touchSwipeStart(event){
 	
 	verticalSwipeLenth = window.innerHeight / 10;
 
-	horizontalSwipeLenth = window.innerWidth / 5;
+	horizontalSwipeLenth = window.innerWidth / 10;
 	
 	tapStartX = event.touches[0].clientX;
 	
