@@ -5,7 +5,7 @@ var tapStartY = 0;
 
 var verticalSwipeLenth = window.innerHeight / 10;
 
-var horizontalSwipeLenth = window.innerWidth / 10;
+var horizontalSwipeLenth = window.innerWidth / 5;
 
 function checkPlayerMovement(event){
 	
@@ -103,7 +103,7 @@ function swipeStart(event){
 	
 	verticalSwipeLenth = window.innerHeight / 10;
 
-	horizontalSwipeLenth = window.innerWidth / 10;
+	horizontalSwipeLenth = window.innerWidth / 5;
 	
 	tapStartX = event.pageX;
 	
@@ -116,8 +116,6 @@ function swipeFinsish(event){
 	deltaX = event.pageX - tapStartX;
 	
 	deltaY = event.pageY - tapStartY;
-	
-	console.log(deltaX + ", " + deltaY);
 	
 	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && deltaX >= Math.abs(deltaY)){
 		
@@ -149,7 +147,7 @@ function touchSwipeStart(event){
 	
 	verticalSwipeLenth = window.innerHeight / 10;
 
-	horizontalSwipeLenth = window.innerWidth / 10;
+	horizontalSwipeLenth = window.innerWidth / 5;
 	
 	tapStartX = event.touches[0].clientX;
 	
