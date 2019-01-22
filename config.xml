@@ -28,8 +28,10 @@
     <preference name="AndroidLaunchMode" value="singleInstance" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="KeepRunning" value="true" />
+    <splash height="2208" src="www/assets/img/splashscreen.png" width="1242" />
     <plugin name="cordova-plugin-fullscreen" spec="^1.2.0" />
     <plugin name="cordova-plugin-screen-orientation" spec="^3.0.1" />
-    <engine name="windows" spec="^6.0.1" />
+    <plugin name="cordova-plugin-splashscreen" spec="^5.0.2" />
     <engine name="android" spec="^7.1.4" />
+    <engine name="windows" spec="^6.0.1" />
 </widget>

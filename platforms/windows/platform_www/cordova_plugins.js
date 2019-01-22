@@ -29,6 +29,20 @@ module.exports = [
     "file": "plugins/es6-promise-plugin/www/promise.js",
     "pluginId": "es6-promise-plugin",
     "runs": true
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreen",
+    "file": "plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "clobbers": [
+      "navigator.splashscreen"
+    ]
+  },
+  {
+    "id": "cordova-plugin-splashscreen.SplashScreenProxy",
+    "file": "plugins/cordova-plugin-splashscreen/www/windows/SplashScreenProxy.js",
+    "pluginId": "cordova-plugin-splashscreen",
+    "runs": true
   }
 ];
 module.exports.metadata = 
@@ -37,7 +51,8 @@ module.exports.metadata =
   "cordova-plugin-fullscreen": "1.1.0",
   "cordova-plugin-screen-orientation": "3.0.1",
   "cordova-plugin-whitelist": "1.3.3",
-  "es6-promise-plugin": "4.2.2"
+  "es6-promise-plugin": "4.2.2",
+  "cordova-plugin-splashscreen": "5.0.2"
 };
 // BOTTOM OF METADATA
 });

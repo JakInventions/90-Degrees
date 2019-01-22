@@ -15,6 +15,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.jakinventions.NinetyDegrees"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.jakinventions.NinetyDegrees"
     }
   },
   "dependent_plugins": {

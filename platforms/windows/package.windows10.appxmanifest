@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Package IgnorableNamespaces="uap mp" xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10">
     <Identity Name="com.jakinventions.NinetyDegrees" Publisher="CN=$username$" Version="1.0.0.0" />
-    <mp:PhoneIdentity PhoneProductId="fa6c7290-1ccf-11e9-8300-5f6f1576007d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+    <mp:PhoneIdentity PhoneProductId="34d54c50-1e7d-11e9-b953-afe047744637" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
     <Properties>
         <DisplayName>Ninety Degrees</DisplayName>
         <PublisherDisplayName>Jak Inventions</PublisherDisplayName>
@@ -18,7 +18,7 @@
         <Application Id="com.jakinventions.NinetyDegrees" StartPage="ms-appx-web://com.jakinventions.ninetydegrees/www/index.html">
             <uap:VisualElements BackgroundColor="#464646" Description="A sample Apache Cordova application that responds to the deviceready event." DisplayName="Ninety Degrees" Square150x150Logo="images\Square150x150Logo.png" Square44x44Logo="images\Square44x44Logo.png">
                 <uap:SplashScreen Image="images\splashscreen.png" />
-                <uap:DefaultTile ShortName="90 Degrees" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
+                <uap:DefaultTile ShortName="Ninety Degrees" Square310x310Logo="images\Square310x310Logo.png" Square71x71Logo="images\Square71x71Logo.png" Wide310x150Logo="images\Wide310x150Logo.png" />
                 <uap:InitialRotationPreference>
                     <uap:Rotation Preference="portrait" />
                     <uap:Rotation Preference="landscape" />

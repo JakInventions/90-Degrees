@@ -7,6 +7,8 @@ window.addEventListener("orientationchange", function(){
 
 window.addEventListener("load", function(){
 	
+	screen.orientation.lock('portrait');
+	
 	if (AndroidFullScreen) {
 		
 		AndroidFullScreen.immersiveMode();

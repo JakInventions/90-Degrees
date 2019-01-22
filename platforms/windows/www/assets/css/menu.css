@@ -1,14 +1,6 @@
 ﻿
 /* Font Imports */
 
-@font-face{
-	
-	src: url("fonts/Roboto-Light.ttf");
-	
-	font-family: roboto;
-	
-}
-
 /* Id's */
 
 #playerPreview{

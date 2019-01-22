@@ -1,6 +1,14 @@
 ﻿
 /* Font Imports */
 
+@font-face{
+	
+	src: url("fonts/Roboto-Thin.ttf");
+	
+	font-family: roboto;
+	
+}
+
 /* Id's */
 
 /* Classes */

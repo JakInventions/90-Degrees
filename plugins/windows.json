@@ -8,18 +8,21 @@
   },
   "installed_plugins": {
     "cordova-plugin-fullscreen": {
-      "PACKAGE_NAME": "90 Degrees"
+      "PACKAGE_NAME": "Ninety Degrees"
     },
     "cordova-plugin-screen-orientation": {
-      "PACKAGE_NAME": "90 Degrees"
+      "PACKAGE_NAME": "Ninety Degrees"
     },
     "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "90 Degrees"
+      "PACKAGE_NAME": "Ninety Degrees"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "Ninety Degrees"
     }
   },
   "dependent_plugins": {
     "es6-promise-plugin": {
-      "PACKAGE_NAME": "90 Degrees"
+      "PACKAGE_NAME": "Ninety Degrees"
     }
   }
 }
