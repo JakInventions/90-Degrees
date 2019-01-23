@@ -9,6 +9,8 @@ var playerRotation = 0;
 
 var whichProjectile = 0;
 
+var score = 0;
+
 var horizonatalProjectileSpeed = window.innerWidth/1000;
 
 var verticalProjectileSpeed = window.innerHeight/1000;
@@ -99,7 +101,7 @@ async function startGame(){
 			
 			//Collisions
 			
-			if(overlap(player, orangeProjectile) || overlap(player, purpleProjectile) || overlap(player, cyanProjectile) || overlap(player, yellowProjectile)){
+			if(overlap(player, orangeProjectile)){
 				
 				if(colorToHex(player.style.background) == orangeShade.toUpperCase()){
 					
@@ -107,17 +109,29 @@ async function startGame(){
 					
 				}
 				
+			}
+			
+			if(overlap(player, purpleProjectile)){
+				
 				if(colorToHex(player.style.background) == purpleShade.toUpperCase()){
 					
 					matched("purple");
 					
 				}
 				
+			}
+			
+			if(overlap(player, cyanProjectile)){
+				
 				if(colorToHex(player.style.background) == cyanShade.toUpperCase()){
 					
 					matched("cyan");
 					
 				}
+				
+			}
+			
+			if(overlap(player, yellowProjectile)){
 				
 				if(colorToHex(player.style.background) == yellowShade.toUpperCase()){
 					
@@ -129,6 +143,8 @@ async function startGame(){
 			
 		}
 		
+		document.getElementById("scoreCount").textContent = score;
+		
 		await sleep(1);
 		
 	}
@@ -137,29 +153,55 @@ async function startGame(){
 
 async function matched(color){
 	
-	await sleep(verticalProjectileSpeed * 150);
+	if(window.matchMedia("(max-width: 600px)").matches) await sleep(verticalProjectileSpeed * 200);
+	
+	else await sleep(verticalProjectileSpeed * 95);
+	
+	if(overlap(player, document.getElementById(color + "Projectile"))){
+		
+		score++;
+		
+		launchProjectile = true;
+		
+		orangeProjectile.style.left = "100vw";
+		
+		orangeProjectile.style.marginLeft = "0px";
+		
+		purpleProjectile.style.top = "100vh";
+		
+		purpleProjectile.style.marginTop = "0px";
+		
+		cyanProjectile.style.left = "0vw";
+		
+		cyanProjectile.style.marginLeft = "-25px";
+		
+		yellowProjectile.style.top = "0vh";
+		
+		yellowProjectile.style.marginTop = "-25px";
+		
+	}
 	
 	if(color == "orange"){
 		
-		console.log(color);
+		
 		
 	}
 	
 	else if(color == "purple"){
 		
-		console.log(color);
+		
 		
 	}
 	
 	else if(color == "cyan"){
 		
-		console.log(color);
+		
 		
 	}
 	
 	else if(color == "yellow"){
 		
-		console.log(color);
+		
 		
 	}
 	
