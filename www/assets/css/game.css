@@ -21,8 +21,6 @@
 
 #gameCanvas{
 	
-	position: relative;
-	
 	display: none;
 	
 }
@@ -41,10 +39,42 @@
 	
 }
 
-#yellowProjectile{ background: #edfd5f; }
-#purpleProjectile{ background: #8A2BE2; }
-#orangeProjectile{ background: #f28500; }
-#cyanProjectile{ background: #1cbfd0; }
+#yellowProjectile{
+	
+	background: #edfd5f;
+	
+	top: 0vh;
+	
+	margin-top: -25px;
+	
+}
+#purpleProjectile{
+	
+	background: #8A2BE2;
+	
+	top: 100vh;
+	
+	margin-top: 0px;
+	
+}
+#orangeProjectile{
+	
+	background: #f28500;
+	
+	left: 100vw;
+	
+	margin-left: 0px;
+	
+}
+#cyanProjectile{
+	
+	background: #1cbfd0;
+	
+	left: 0vw;
+	
+	margin-left: -25px;
+	
+}
 
 /* Classes */
 
@@ -54,6 +84,10 @@
 	
 	height: 25px;
 	
+	left: 50vw;
+	
+	margin-left: -25px;
+	
 }
 
 .horizontal{
@@ -61,6 +95,8 @@
 	width: 25px;
 	
 	height: 50px;
+	
+	margin-top: 50vwh;
 	
 }
 
