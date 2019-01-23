@@ -109,6 +109,12 @@ async function startGame(){
 					
 				}
 				
+				else{
+					
+					notMatched("orange");
+					
+				}
+				
 			}
 			
 			if(overlap(player, purpleProjectile)){
@@ -116,6 +122,12 @@ async function startGame(){
 				if(colorToHex(player.style.background) == purpleShade.toUpperCase()){
 					
 					matched("purple");
+					
+				}
+				
+				else{
+					
+					notMatched("purple");
 					
 				}
 				
@@ -129,6 +141,12 @@ async function startGame(){
 					
 				}
 				
+				else{
+					
+					notMatched("cyan");
+					
+				}
+				
 			}
 			
 			if(overlap(player, yellowProjectile)){
@@ -136,6 +154,12 @@ async function startGame(){
 				if(colorToHex(player.style.background) == yellowShade.toUpperCase()){
 					
 					matched("yellow");
+					
+				}
+				
+				else{
+					
+					notMatched("yellow");
 					
 				}
 				
@@ -181,29 +205,21 @@ async function matched(color){
 		
 	}
 	
-	if(color == "orange"){
+}
+
+async function notMatched(color){
+	
+	for(var i = 0; i < 100; i++){
 		
+		if(window.matchMedia("(max-width: 600px)").matches) await sleep(500);
 		
+		else await sleep(250);
+		
+		document.getElementById(color + "Projectile").style.opacity = window.getComputedStyle(document.getElementById(color + "Projectile")).getPropertyValue("opacity") - 0.01;
 		
 	}
 	
-	else if(color == "purple"){
-		
-		
-		
-	}
-	
-	else if(color == "cyan"){
-		
-		
-		
-	}
-	
-	else if(color == "yellow"){
-		
-		
-		
-	}
+	console.log("done");
 	
 }
 

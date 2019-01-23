@@ -17,6 +17,8 @@
 	
 	transition: 0.5s;
 	
+	z-index: -1;
+	
 }
 
 #gameCanvas{
@@ -76,6 +78,30 @@
 	
 }
 
+#gameOverBoard{
+	
+	position: absolute;
+	
+	background: #919191;
+	
+	width: 400px;
+	
+	height: 250px;
+	
+	top: 50vh;
+	
+	left: 50vw;
+	
+	margin-top: -125px;
+	
+	margin-left: -200px;
+	
+	z-index: 2;
+	
+	opacity: 0;
+	
+}
+
 /* Classes */
 
 .vertical{
@@ -115,7 +141,18 @@
 @media only screen and (max-width: 600px){
 	
 	/* Id's */
-
+	
+	#gameOverBoard{
+		
+		width: 300px;
+		
+		height: 200px;
+	
+		margin-top: -100px;
+	
+		margin-left: -150px;
+		
+	}
 	/* Classes */
 
 	/* Tags */
