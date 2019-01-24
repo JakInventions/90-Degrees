@@ -167,6 +167,16 @@ async function startGame(){
 			
 		}
 		
+		//Acceleration
+		
+		if(horizonatalProjectileSpeed < window.innerWidth/200 && verticalProjectileSpeed < window.innerHeight/200){
+			
+			horizonatalProjectileSpeed += 0.0001;
+			
+			verticalProjectileSpeed += 0.0001;
+			
+		}
+		
 		document.getElementById("scoreCount").textContent = score;
 		
 		await sleep(1);
@@ -177,9 +187,11 @@ async function startGame(){
 
 async function matched(color){
 	
-	if(window.matchMedia("(max-width: 600px)").matches) await sleep(verticalProjectileSpeed * 200);
+	console.log("collided");
 	
-	else await sleep(verticalProjectileSpeed * 95);
+	if(window.matchMedia("(max-width: 600px)").matches) await sleep(1);
+	
+	else await sleep(1);
 	
 	if(overlap(player, document.getElementById(color + "Projectile"))){
 		
@@ -211,15 +223,29 @@ async function notMatched(color){
 	
 	for(var i = 0; i < 100; i++){
 		
-		if(window.matchMedia("(max-width: 600px)").matches) await sleep(500);
+		if(window.matchMedia("(max-width: 600px)").matches){
+			
+			if(color == "orange" || color == "cyan") await sleep(125);
+			
+			else await sleep(250);
+			
+		}
 		
-		else await sleep(250);
+		else{
+			
+			if(color == "orange" || color == "cyan") await sleep(125);
+			
+			else await sleep(250);
+			
+		}
 		
 		document.getElementById(color + "Projectile").style.opacity = window.getComputedStyle(document.getElementById(color + "Projectile")).getPropertyValue("opacity") - 0.01;
 		
 	}
 	
-	console.log("done");
+	await sleep(0);
+	
+	console.log("ok");
 	
 }
 

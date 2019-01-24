@@ -17,11 +17,11 @@
 	
 	transition: 0.5s;
 	
+	z-index: -1;
+	
 }
 
 #gameCanvas{
-	
-	position: relative;
 	
 	display: none;
 	
@@ -41,10 +41,66 @@
 	
 }
 
-#yellowProjectile{ background: #edfd5f; }
-#purpleProjectile{ background: #8A2BE2; }
-#orangeProjectile{ background: #f28500; }
-#cyanProjectile{ background: #1cbfd0; }
+#yellowProjectile{
+	
+	background: #edfd5f;
+	
+	top: 0vh;
+	
+	margin-top: -25px;
+	
+}
+#purpleProjectile{
+	
+	background: #8A2BE2;
+	
+	top: 100vh;
+	
+	margin-top: 0px;
+	
+}
+#orangeProjectile{
+	
+	background: #f28500;
+	
+	left: 100vw;
+	
+	margin-left: 0px;
+	
+}
+#cyanProjectile{
+	
+	background: #1cbfd0;
+	
+	left: 0vw;
+	
+	margin-left: -25px;
+	
+}
+
+#gameOverBoard{
+	
+	position: absolute;
+	
+	background: #919191;
+	
+	width: 400px;
+	
+	height: 250px;
+	
+	top: 50vh;
+	
+	left: 50vw;
+	
+	margin-top: -125px;
+	
+	margin-left: -200px;
+	
+	z-index: 2;
+	
+	opacity: 0;
+	
+}
 
 /* Classes */
 
@@ -54,6 +110,10 @@
 	
 	height: 25px;
 	
+	left: 50vw;
+	
+	margin-left: -25px;
+	
 }
 
 .horizontal{
@@ -61,6 +121,8 @@
 	width: 25px;
 	
 	height: 50px;
+	
+	margin-top: 50vwh;
 	
 }
 
@@ -79,7 +141,18 @@
 @media only screen and (max-width: 600px){
 	
 	/* Id's */
-
+	
+	#gameOverBoard{
+		
+		width: 300px;
+		
+		height: 200px;
+	
+		margin-top: -100px;
+	
+		margin-left: -150px;
+		
+	}
 	/* Classes */
 
 	/* Tags */
