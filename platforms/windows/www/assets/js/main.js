@@ -1,4 +1,4 @@
-﻿
+
 window.addEventListener("orientationchange", function(){
 	
 	screen.orientation.lock('portrait');
@@ -6,6 +6,8 @@ window.addEventListener("orientationchange", function(){
 });
 
 window.addEventListener("load", function(){
+	
+	screen.orientation.lock('portrait');
 	
 	if (AndroidFullScreen) {
 		

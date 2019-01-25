@@ -209,11 +209,15 @@ async function matched(color){
 		
 		cyanProjectile.style.left = "0vw";
 		
-		cyanProjectile.style.marginLeft = "-25px";
+		if(window.matchMedia("(max-width: 600px)").matches) cyanProjectile.style.marginLeft = "-15px";
+		
+		else cyanProjectile.style.marginLeft = "-20px";
 		
 		yellowProjectile.style.top = "0vh";
 		
-		yellowProjectile.style.marginTop = "-25px";
+		if(window.matchMedia("(max-width: 600px)").matches) yellowProjectile.style.marginTop = "-15px";
+		
+		else yellowProjectile.style.marginTop = "-20px";
 		
 	}
 	
@@ -223,15 +227,29 @@ async function notMatched(color){
 	
 	for(var i = 0; i < 100; i++){
 		
-		if(window.matchMedia("(max-width: 600px)").matches) await sleep(500);
+		if(window.matchMedia("(max-width: 600px)").matches){
+			
+			if(color == "orange" || color == "cyan") await sleep(125);
+			
+			else await sleep(250);
+			
+		}
 		
-		else await sleep(250);
+		else{
+			
+			if(color == "orange" || color == "cyan") await sleep(125);
+			
+			else await sleep(250);
+			
+		}
 		
 		document.getElementById(color + "Projectile").style.opacity = window.getComputedStyle(document.getElementById(color + "Projectile")).getPropertyValue("opacity") - 0.01;
 		
 	}
 	
-	console.log("done");
+	await sleep(0);
+	
+	console.log("ok");
 	
 }
 

@@ -6,5 +6,13 @@
     {
         "merged": "C:\\Users\\Jak\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
         "source": "C:\\Users\\Jak\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\techn\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\xml_config.xml.flat",
+        "source": "C:\\Users\\techn\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\src\\main\\res\\xml\\config.xml"
+    },
+    {
+        "merged": "C:\\Users\\techn\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_icon.png.flat",
+        "source": "C:\\Users\\techn\\Desktop\\githubStuff\\90-Degrees\\platforms\\android\\app\\src\\main\\res\\mipmap-mdpi\\icon.png"
     }
 ]

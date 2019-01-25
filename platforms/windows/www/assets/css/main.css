@@ -1,4 +1,4 @@
-﻿
+
 /* Font Imports */
 
 @font-face{
@@ -23,11 +23,17 @@ body{
 	
 	padding: 0px;
 	
+	position: relative;
+	
 }
 
-html{
+html, body{
 	
 	height: 100%;
+	
+	overflow: hidden;
+	
+	margin: 0;
 	
 }
 

@@ -1,4 +1,4 @@
-﻿cordova.define("cordova-plugin-fullscreen.AndroidFullScreen", function(require, exports, module) {
+cordova.define("cordova-plugin-fullscreen.AndroidFullScreen", function(require, exports, module) {
 (function(window, undefined)
 {
 	'use strict';

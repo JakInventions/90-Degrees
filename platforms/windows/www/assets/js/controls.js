@@ -1,4 +1,4 @@
-﻿
+
 var tapStartX = 0;
 
 var tapStartY = 0;
@@ -113,25 +113,29 @@ function swipeStart(event){
 
 function swipeFinsish(event){
 	
-	if(event.pageX - tapStartX >= horizontalSwipeLenth){
+	deltaX = event.pageX - tapStartX;
+	
+	deltaY = event.pageY - tapStartY;
+	
+	if(deltaX > 0 && deltaX >= horizontalSwipeLenth && Math.abs(deltaX) >= Math.abs(deltaY)){
 		
 		turnRight();
 		
 	}
 	
-	else if(tapStartX - event.pageX >= horizontalSwipeLenth){
+	else if(deltaX < 0 && Math.abs(deltaX) >= horizontalSwipeLenth && Math.abs(deltaX) >= Math.abs(deltaY)){
 		
 		turnLeft();
 		
 	}
 	
-	else if(event.pageY - tapStartY >= verticalSwipeLenth){
+	else if(deltaY > 0 && deltaY >= verticalSwipeLenth && Math.abs(deltaY) >= Math.abs(deltaX)){
 		
 		turnDown();
 		
 	}
 	
-	else if(tapStartY - event.pageY >= verticalSwipeLenth){
+	else if(deltaY < 0 && Math.abs(deltaY) >= verticalSwipeLenth && Math.abs(deltaY) >= Math.abs(deltaX)){
 		
 		turnUp();
 		
@@ -153,25 +157,29 @@ function touchSwipeStart(event){
 
 function touchSwipeEnd(event){
 	
-	if(event.changedTouches[0].clientX - tapStartX >= horizontalSwipeLenth){
+	deltaX = event.changedTouches[0].clientX - tapStartX;
+	
+	deltaY = event.changedTouches[0].clientY - tapStartY;
+	
+	if(deltaX > 0 && deltaX >= horizontalSwipeLenth){
 		
 		turnRight();
 		
 	}
 	
-	else if(tapStartX - event.changedTouches[0].clientX >= horizontalSwipeLenth){
+	else if(deltaX < 0 && Math.abs(deltaX) >= horizontalSwipeLenth){
 		
 		turnLeft();
 		
 	}
 	
-	else if(event.changedTouches[0].clientY - tapStartY >= verticalSwipeLenth){
+	else if(deltaY > 0 && deltaY >= verticalSwipeLenth){
 		
 		turnDown();
 		
 	}
 	
-	else if(tapStartY - event.changedTouches[0].clientY >= verticalSwipeLenth){
+	else if(deltaY < 0 && Math.abs(deltaY) >= verticalSwipeLenth){
 		
 		turnUp();
 		

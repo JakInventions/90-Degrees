@@ -1,4 +1,4 @@
-﻿
+
 function showSplashScreens(){
 	
 	$(function(){

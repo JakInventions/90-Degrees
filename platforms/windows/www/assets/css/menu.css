@@ -1,7 +1,13 @@
-﻿
+
 /* Font Imports */
 
 /* Id's */
+
+#splashScreen{
+	
+	display: none;
+	
+}
 
 #playerPreview{
 	

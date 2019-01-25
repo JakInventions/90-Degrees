@@ -1,4 +1,4 @@
-﻿
+
 var gameStarted = false;
 
 //Color codes

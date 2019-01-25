@@ -209,11 +209,15 @@ async function matched(color){
 		
 		cyanProjectile.style.left = "0vw";
 		
-		cyanProjectile.style.marginLeft = "-25px";
+		if(window.matchMedia("(max-width: 600px)").matches) cyanProjectile.style.marginLeft = "-15px";
+		
+		else cyanProjectile.style.marginLeft = "-20px";
 		
 		yellowProjectile.style.top = "0vh";
 		
-		yellowProjectile.style.marginTop = "-25px";
+		if(window.matchMedia("(max-width: 600px)").matches) yellowProjectile.style.marginTop = "-15px";
+		
+		else yellowProjectile.style.marginTop = "-20px";
 		
 	}
 	
