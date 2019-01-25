@@ -11,6 +11,8 @@ var whichProjectile = 0;
 
 var score = 0;
 
+var timeCount = 0;
+
 var horizonatalProjectileSpeed = window.innerWidth/1000;
 
 var verticalProjectileSpeed = window.innerHeight/1000;
@@ -179,6 +181,24 @@ async function startGame(){
 		
 		document.getElementById("scoreCount").textContent = score;
 		
+		if(timeCount == 2000) {document.getElementById("player").className = "transitionlvl1"; console.log("first one hit")}
+		
+		else if(timeCount == 5000) {document.getElementById("player").className = "transitionlvl2";}
+		
+		else if(timeCount == 8000) {document.getElementById("player").className = "transitionlvl3";}
+		
+		else if(timeCount == 11000) {document.getElementById("player").className = "transitionlvl4";}
+		
+		else if(timeCount == 14000) {document.getElementById("player").className = "transitionlvl5";}
+		
+		else if(timeCount == 17000) {document.getElementById("player").className = "transitionlvl6";}
+		
+		else if(timeCount == 20000) {document.getElementById("player").className = "transitionlvl7";}
+		
+		else if(timeCount == 23000) {document.getElementById("player").className = "transitionlvl8";}
+			
+		timeCount++;
+		
 		await sleep(1);
 		
 	}
@@ -186,8 +206,6 @@ async function startGame(){
 }
 
 async function matched(color){
-	
-	console.log("collided");
 	
 	if(window.matchMedia("(max-width: 600px)").matches) await sleep(1);
 	
@@ -248,8 +266,6 @@ async function notMatched(color){
 	}
 	
 	await sleep(0);
-	
-	console.log("ok");
 	
 }
 
